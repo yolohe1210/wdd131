@@ -1,0 +1,48 @@
+body {
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+    width: 60%
+}
+
+h1 {
+    font-weight: lighter;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+h3 {
+    font-weight: lighter;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    color: #427fc5;
+    letter-spacing: 2px;
+}
+
+hr {
+    border: none; 
+    height: 1px; 
+    background-color: rgb(227, 226, 226);
+    margin-bottom: 50px;
+}
+
+p {
+    line-height: 1.6em;
+    margin: 30px auto;
+    text-align: left;
+}
+
+#text {
+    font-style: italic;
+}
+
+ol {
+    text-align: left;
+    line-height: 1.6em;
+    margin: 20px auto;
+    list-style: i;
+}
+
+img {
+    width: 150px;
+    margin-top: 50px;
+}
