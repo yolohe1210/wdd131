@@ -1,12 +1,18 @@
 body {
-    margin: auto;
+    margin: 80px auto;
     padding: 50px;
     text-align: center;
-    width: 60%
+    width: 60%;
+    border: 1px solid black;
+}
+
+body.dark {
+    background-color: #333;
+    color: white;
+    border: 1px solid white;
 }
 
 h1 {
-    font-weight: lighter;
     font-size: 2.5em;
     letter-spacing: 2px;
 }
@@ -45,4 +51,11 @@ ol {
 img {
     width: 150px;
     margin-top: 50px;
+}
+
+.theme {
+    position: absolute; 
+    top: 20px;         
+    left: 20px;       
+    z-index: 10;       
 }
