@@ -32,26 +32,28 @@ nav a {
 img {
     border: 3px solid white;
     box-shadow: 5px 5px 10px black;
-    margin: 10px;
-    max-width: 100%;    
-    height: auto;      
-    width: auto;
+    display: block;
+    margin: 20px auto;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
 }
 
 @media screen and (min-width: 700px) {
     .photos {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        justify-items: center;
+        width: 80%;
+        margin: 30px auto;        
+        gap: 20px 40px;
+        justify-content: center; 
+        align-content: center;
     }   
 }
 
 @media screen and (min-width: 1000px) {
     .photos {
         grid-template-columns: 1fr 1fr 1fr;
-        width: 70%;
-        margin: 30px auto;        
-        gap: 20px 40px;
     }
     .menu-btn {
         display: none;
