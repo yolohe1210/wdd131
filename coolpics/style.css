@@ -20,8 +20,19 @@ main {
 nav a {
     padding: 20px;
     color: white;
-    display: none;
 }
+.menu {
+    display: none; 
+}
+.menu.open {
+    display: block;
+}
+.menu a {
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
 .menu-btn {
     cursor: pointer;
     border: none;
@@ -37,6 +48,44 @@ img {
     width: 250px;
     height: 250px;
     object-fit: cover;
+}
+
+dialog img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain; 
+    margin: 100px auto;          
+    border: none;      
+    box-shadow: none;
+    display: center;
+    
+}
+dialog {
+    padding: 0;
+    border: none;
+    background-color: rgba(0,0,0,.75); 
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    margin: auto;    
+}
+.close-viewer {
+    position: absolute;
+    top: 10vh;
+    right: 10vh;
+    z-index: 10;
+}
+dialog button {
+    background-color: white;
+    cursor: pointer;
+    padding: 10px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: none;
 }
 
 @media screen and (min-width: 700px) {
@@ -58,10 +107,10 @@ img {
     .menu-btn {
         display: none;
     }
-    nav a {
-        display: inline;
+    .menu {
+        display: block; 
     }
-    nav {
-        text-align: center;
+    .menu a {
+        display: inline-block; 
     }
 }
