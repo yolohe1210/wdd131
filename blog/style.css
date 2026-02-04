@@ -1,0 +1,65 @@
+h1 {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid orange;
+}
+header {
+    padding-bottom: 15px;
+    border-bottom: 1px solid orange;
+    display: flex; 
+    justify-content: flex-end;
+    margin-bottom: 50px;
+}
+nav {
+    width: 300px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(174, 22, 22);
+}
+main {
+    padding:20px;
+    border-top: 1px solid orange;
+    border-bottom: 1px solid orange;
+}
+.review {
+    text-align: right;
+    padding:0 20px;
+}
+.book {
+    text-align: center;
+}
+.book h2 {
+    color: rgb(174, 22, 22);
+}
+footer {
+    text-align: center;
+}
+@media (min-width: 600px) {
+    header{
+        margin-bottom: 0;
+    }
+    main {
+        border-top: none;
+        padding: 50px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .review {
+        grid-column: 1 /2;
+        border-right: 1px solid orange;
+        padding-right: 50px;
+    }
+    .book {
+        grid-column: 2 / 3;
+    }
+}
