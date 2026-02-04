@@ -3,12 +3,11 @@ h1 {
     padding: 10px;
     border-bottom: 1px solid orange;
 }
-header {
+.banner {
     padding-bottom: 15px;
     border-bottom: 1px solid orange;
     display: flex; 
     justify-content: flex-end;
-    margin-bottom: 50px;
 }
 nav {
     width: 300px;
@@ -26,6 +25,9 @@ nav ul li a{
     text-decoration: none;
     color: rgb(174, 22, 22);
 }
+header {
+    margin-bottom: 50px;
+}
 main {
     padding:20px;
     border-top: 1px solid orange;
@@ -34,6 +36,9 @@ main {
 .review {
     text-align: right;
     padding:0 20px;
+}
+.review time {
+    font-style: italic;
 }
 .book {
     text-align: center;
