@@ -55,6 +55,9 @@ footer {
     }
     main {
         border-top: none;
+    }
+    .entry {
+        
         padding: 50px;
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -66,5 +69,6 @@ footer {
     }
     .book {
         grid-column: 2 / 3;
+        padding: 0 50px;
     }
 }
