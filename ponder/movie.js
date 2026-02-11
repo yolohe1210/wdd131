@@ -1,5 +1,5 @@
 
-const movies = [
+const article = [
       {
         title: "Spider-Man: Into the Spider-Verse",
         date: "Dec 14, 2018",
@@ -45,7 +45,7 @@ const movies = [
 
 const movieList = document.getElementById('movie-list');
 
-movies.forEach(movies => {
+article.forEach(movies => {
     const article = document.createElement('article');
     article.className = 'movie';
 

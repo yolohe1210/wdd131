@@ -33,6 +33,9 @@ main {
     border-top: 1px solid orange;
     border-bottom: 1px solid orange;
 }
+.entry {
+    margin-bottom: 50px;
+}
 .review {
     text-align: right;
     padding:0 20px;
@@ -57,7 +60,6 @@ footer {
         border-top: none;
     }
     .entry {
-        
         padding: 50px;
         display: grid;
         grid-template-columns: 1fr 2fr;
