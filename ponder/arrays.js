@@ -1,8 +1,8 @@
-const numbers = [65, 44, 12, 4];
-numbers.forEach(myFunction)
-function myFunction(item) {
-  console.log(item * 10); 
-}         
+// const numbers = [65, 44, 12, 4];
+// numbers.forEach(myFunction)
+// function myFunction(item) {
+//   console.log(item * 10); 
+// }         
                     
 
 const steps = ['one', 'two', 'three'];
@@ -57,21 +57,39 @@ console.log(total);
 
 const words = ['watermelon', 'peach', 'apple', 'tomato', 'grape'];
 const filteredWords = words.filter(function(word){
-    return word.length >= 5;
+    return word.length < 6;
 })
 console.log(filteredWords); 
 
-const students = [
-    {last: 'Andrus', first: 'Aaron'},
-    {last: 'Masa', first:'Manny'},
-    {last: 'Tanda', first: 'Tamanda'}
-];
-const studentContainer = document.getElementById('student-container');
-const studentHTML = students.map(student => {
-    return `<div class="student-card" style="text-align: center;">
-                <p>${student.first} ${student.last}</p>
-                <hr>
-            </div>`;
-});
-studentContainer.innerHTML = studentHTML.join('');
+// const students = [
+//     {last: 'Andrus', first: 'Aaron'},
+//     {last: 'Masa', first:'Manny'},
+//     {last: 'Tanda', first: 'Tamanda'}
+// ];
+// const studentContainer = document.getElementById('student-container');
+// const studentHTML = students.map(student => {
+//     return `<div class="student-card" style="text-align: center;">
+//                 <p>${student.first} ${student.last}</p>
+//                 <hr>
+//             </div>`;
+// });
+// studentContainer.innerHTML = studentHTML.join('');
           
+const classes = [
+    {name: 'WDD131', credits: 2},
+    {name: 'CSE170', credits: 2},
+    {name: 'ITM455', credits: 4}
+]
+
+let container = document.querySelector('#classes');
+
+classes.forEach(function(item){
+    let name = document.createElement('div');
+    let html = `
+    <span>${item.name}</span>
+    <span>${item.credits}</span>
+    <hr>
+    `;
+    name.innerHTML = html; 
+    container.appendChild(name);
+})
