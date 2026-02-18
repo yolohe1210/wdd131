@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Credit Card Form">
+    <meta name="author" content="Yin He">    
+    <title>Credit Card 💳</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <form id="cardForm">
+        <div id="cardFront">
+            <p id="total">TOTAL: $199</p>   
+            <p id="icon">💳</p>
+            <div id="cardNumberSection">
+                <label id="cardNumberLabel" for="cardNumber">CARD NUMBER</label>
+                <input
+                type="text"
+                id="creditCardNumber"
+                name="creditCardNumber"
+                pattern="[0-9]{16}"
+                placeholder="1234 1234 1234 1234"
+                required
+                />
+            </div>
+            <div id="cardHolderSection">
+                <label id="cardHolderLabel" for="cardHolder">CARD HOLDER</label>
+                <input
+                type="text"
+                id="cardHolder"
+                name="cardHolder"
+                placeholder="John Doe"
+                required
+                />
+            </div>
+            <div id="cardExpiration">
+                <label for="expirationDate">EXPIRATION</label>
+                <div id="expirationSection">
+                    <input type='text' id='month' name="expMonth" placeholder="MM" aria-labelledby="expirationDate" maxlength="2" required>
+                    <input type='text' id='year' name="expYear" placeholder="YY" aria-labelledby="expirationDate" maxlength="2" required>
+                </div>
+            </div>
+        </div>
+        <div id="cardBack">
+            <div id="magneticStrip"></div>
+            <div id="cvvSection">
+                <label for="cvv">CVC/CVV</label>
+                <input type="text" id="cvv" name="cvv" pattern="[0-9]{3}" placeholder="XXX" required>
+            </div>    
+        </div>
+        <button type="submit" id="submitButton">Submit</button>
+        <p id="errorMessage"></p>
+    </form>
+</div>
+</body>
+</html>
