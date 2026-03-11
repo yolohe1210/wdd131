@@ -47,6 +47,10 @@ h1 {
     border-left: 1px solid black;
 }
 
+button {
+    background: none;
+    border: none;
+}
 main {
     align-items: center;
     margin: 10px auto;
@@ -65,7 +69,7 @@ main {
     padding: 20px 20px 0 20px ;
 }
 
-.recipe-card img {
+.recipe-content img {
     width: 100%;          
     height: auto;        
     border-radius: 5px;    
@@ -76,9 +80,9 @@ main {
     padding: 0 20px 20px 20px;
 }
 
-.type {
+.recipe-tags {
     display: flex;
-    width: 100px;
+    width: fit-content;
     height: 30px;
     background: lightgrey;
     text-align: center;
@@ -91,7 +95,7 @@ main {
 
 h2 {
     font-family: "Walter Turncoat", cursive;
-    color: lightskyblue;
+    color: rgb(41, 144, 208);
     font-size: 2em;
 }
 
@@ -118,8 +122,14 @@ footer {
 }
 
 @media screen and (min-width: 700px) {
-    .recipe-card {
+    .recipe-content {
         display: flex;
+    }
+    .recipe-img {
+        width: 45%;
+    }
+    .recipe-info {
+        width: 55%;
     }
     .recipe-description {
         display: block;
