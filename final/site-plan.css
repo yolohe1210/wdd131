@@ -16,7 +16,7 @@ Fonts are separated by a | */
 
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: var(
-    --primary-color
+    --accent1-color
   ); /* headlines on a white background */
   --headline-color-on-color: var(--secondary-color); /* headlines on a colored background */
   --paragraph-color-on-white: var(
@@ -91,12 +91,14 @@ p {
 
 .primary {
   background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 .secondary {
   background-color: var(--secondary-color);
 }
 .accent1 {
   background-color: var(--accent1-color);
+  color: var(--secondary-color);
 }
 .accent2 {
   background-color: var(--accent2-color);
