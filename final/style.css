@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #248232;
+    text-align: center;
+    padding: 40px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+img {
+    width: 100px;
+}
+
+nav {
+    margin: 0;
+}
+
+nav ul{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+header h1, header a {
+    color: #fcfffc;
+}
+
+a {
+    display: inline;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+a:hover {
+    background-color: #2d3a3a;
+}
+
+h1, h2, h3 {
+    font-family: "Anta", sans-serif;
+}
+
+p {
+    font-family: "Outfit", sans-serif;
+}
+
+main {
+    padding: 60px;
+}
+
+main h2, h3, p{
+    color: #2d3a3a;
+}
+.habit-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+}
+
+.habit-card {
+    background-color: #fcfffc;
+    padding: 40px;
+    width: 160px;
+    border: 5px solid #248232;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px #2d3a3a;
+}
+
+.habit-card h3 {
+    padding: 30px 0;
+}
+
+.description {
+    padding: 30px 0;
+}
+
+.complete {
+    border: none;
+    height: 40px;
+    width: 110px;
+    font-size: 1.1em;
+    background-color: #248232;
+    color: #fcfffc;
+}
+
+.complete:hover {
+    background-color: #2d3a3a;
+}
+footer {
+    background: #248232;
+    padding: 30px;
+}
+
+footer p {
+    color: #fcfffc;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    header {
+        padding: 30px;
+    }
+
+    nav ul {
+        flex-direction: column; 
+        gap: 15px;             
+        padding-top: 20px;
+    }
+
+    .habit-container {
+        padding: 20px;
+        gap: 30px; 
+    }
+
+    .habit-card {
+        width: 80%; 
+        max-width: 300px;
+        padding: 20px;
+    }
+
+    main {
+        padding: 20px; 
+    }
+
+    a:hover {
+        padding: 5px; 
+    }
+    .title {
+        flex-direction: column; 
+        gap: 10px;
+    }
+    img {
+        width: 60px; 
+    }
+}
+
+.intro h2 {
+    padding-bottom: 10px;
+}
+
+.intro h3 {
+    padding-top: 10px;
+}
+
+.rule {
+    padding: 20px;
+}
+
+.stages {
+    padding: 20px;
+}
